@@ -3404,7 +3404,7 @@ To handle the errors you should add a ``try`` block around the call to a unified
    # try to call a unified method
    try:
        response = await exchange.fetch_order_book('ETH/BTC')
-       print(ticker)
+       print(response)
    except ccxt.NetworkError as e:
        print(exchange.id, 'fetch_order_book failed due to a network error:', str(e))
        # retry or whatever
